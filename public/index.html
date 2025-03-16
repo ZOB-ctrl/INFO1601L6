@@ -7,18 +7,32 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+<img id = "myId" src = "https://placecage.lucidinternets.com/200/300" alt = "">
+
     <h1>My Page</h1>
 
     <input type="button" id="alertBtn" value="alert" onclick="alertFun()"/>
     <input type="button" value="confirm" onclick="confirmFun()"/>
     <input type="button" value="prompt" onclick="promptFun()"/>
-
+    <input id="myBtn" type="button" onclick="myFun()" value="click me"/>
     <span id="result"></span>
-
-    <script>
-
-
-    </script>
     <script src="script.js"></script>
+    <script>
+  function alertFun(){
+    alert("Hello !");
+
+    
+   }
+
+const img = document.getElementByID('#myId');
+img.addEventListener('load', loaded);
+
+function loaded (){
+  console.log('img loaded');
+}
+
+ 
+</script>
+   
   </body>
 </html>
